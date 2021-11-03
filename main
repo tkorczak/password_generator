@@ -1,0 +1,13 @@
+import random
+import string
+litery=string.ascii_letters
+cyfry=string.digits
+znaki_specjalne=string.punctuation
+wszystkie=litery+cyfry+znaki_specjalne
+haslo=''
+wylosowana=''
+dlugosc_hasla=int(input('Podaj długość hasła:'))
+for i in range(dlugosc_hasla):
+    wylosowana=random.choice(wszystkie)
+    haslo=haslo+wylosowana
+print(haslo)    
